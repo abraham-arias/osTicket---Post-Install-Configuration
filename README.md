@@ -19,13 +19,13 @@ This tutorial outlines the post-install configuration of the open-source help de
 <h3> Step 1: Configure Roles </h3> First, we are going to create a "Supreme Admin" role, and give this role full access. To do this from the Admin Panel we are going to "Agents", then "Roles", and "Add New Role". Enter the name "Supreme Admin". In Permissions, you are given different areas that you can assign permissions to this role. For this role we are going to check every permission, making this a role that can essentially do everything.
 </p>
 <br />
-<img src="https://i.imgur.com/9IxMbM9.png"/>
+<img src="https://i.imgur.com/AxZLAMB.png"/>
 </p>
 <p>
 <h3> Step 2: Configure Departments </h3> Next, we will create a department in the Admin Panel. Navigate to "Agents", "Departments", and select "Add New Department". Name this department "System Administrators", and for this project we are going to leave all the default settings and simply click "Create Department".
 </p>
 <br />
-<img src="https://i.imgur.com/d0dogVG.png" height="80%" width="80%" alt="System Admins"/>
+<img src="https://i.imgur.com/DL5ebHM.png"/>
 </p>
 <p>
 <h3> Step 3: Configure Teams </h3> Creating teams allows for multiple agents from different departments to collaborate together on a team. To make a team from the Admin Panel, navigate to "Agents", "Teams", and select "Add New Team". Call this team "Level II Support", and under the "Members" tab add yourself to the team.
