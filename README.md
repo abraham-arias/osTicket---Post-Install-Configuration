@@ -47,22 +47,22 @@ This tutorial outlines the post-install configuration of the open-source help de
 <img src="https://i.imgur.com/QexHP1d.png"/>
 </p>
 <p>
-<h3> Step 6: Configure Users </h3> Next, we will configure the users, who simply put, are the people opening tickets. To add users, switch to the "Agent Panel". Under "Users", click "Create New User". Name the first user "Karen Karen" with an email of "Karen@osticket.com", and "Add User". We will now add one more user. Following the same steps with the name Ken.
+<h3> Step 6: Configure Users </h3> Next, we will configure the users, who simply put, are the people opening tickets. To add users, switch to the "Agent Panel". Under "Users", click "Create New User". Name the first user "Maria Larson" with an email of "maria.larson@osticket.com", and "Add User". We will now add one more user. Following the same steps with the name Jhon Wick.
 </p>
 <br />
-<img src="https://i.imgur.com/GFUOmmu.png" height="80%" width="80%" alt="New Users"/>
+<img src="https://i.imgur.com/nqd72sj.png"/>
 </p>
 <p>
 <h3> Step 7: Configure SLAs </h3> The purpose for the Service Level Agreement is to prioritize requests and also provide a length of time in which the help desk administrator expects the tickets to be resolved. So we will do this next. Go back to the "Admin Panel" and navigate to "Manage", and "SLA" where we will create 3 SLA plans. Click "Add New SLA Plan", naming it "SEV A", a grace period of "1" (hours), and schedule of "24/7". This means that at any time a ticket comes in, it has to be resolved in 1 hour. Next make two more SLAs, one called "SEV B", a grace period of "4" (hours), schedule of "24/7", and finally "SEV C", grace period of "8" (hours), schedule "Monday-Friday".
 </p>
 <br />
-<img src="https://i.imgur.com/pnthCaA.png" height="80%" width="80%" alt="SLAs"/>
+<img src="https://i.imgur.com/Y0XNLPD.png"/>
 </p>
 <p>
 <h3> Step 8: Configure Help Topics </h3> Help topics help streamline tickets assignments for users, so we will configure a few now. In the Admin Panel, navigate to "Manage", "Help Topics", and click "Add New Help Topic". We will create the following 4 help topics: "Business Critical Outage", "Personal Computer Issues", "Equipment Request", and "Password Reset".
 </p>
 <br />
-<img src="https://i.imgur.com/N7dOIZu.png" height="80%" width="80%" alt="Help Topics"/>
+<img src="https://i.imgur.com/aX2RVgn.png"/>
 </p>
 <p>
 <br />
