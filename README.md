@@ -19,7 +19,7 @@ This tutorial outlines the post-install configuration of the open-source help de
 <h3> Step 1: Configure Roles </h3> First, we are going to create a "Supreme Admin" role, and give this role full access. To do this from the Admin Panel we are going to "Agents", then "Roles", and "Add New Role". Enter the name "Supreme Admin". In Permissions, you are given different areas that you can assign permissions to this role. For this role we are going to check every permission, making this a role that can essentially do everything.
 </p>
 <br />
-<img src="https://i.imgur.com/GCKAE7u.png" height="80%" width="80%" alt="Roles permissions"/>
+<img src="https://imgur.com/9IxMbM9"/>
 </p>
 <p>
 <h3> Step 2: Configure Departments </h3> Next, we will create a department in the Admin Panel. Navigate to "Agents", "Departments", and select "Add New Department". Name this department "System Administrators", and for this project we are going to leave all the default settings and simply click "Create Department".
