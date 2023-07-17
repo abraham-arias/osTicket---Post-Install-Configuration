@@ -32,19 +32,19 @@ This tutorial outlines the post-install configuration of the open-source help de
 </p>
 <br />
 
-<img src="https://i.imgur.com/P0wKPVo.png" height="80%" width="80%" alt="Level II Support"/>
+<img src="https://i.imgur.com/qOP1yxp.png"/>
 </p>
 <p>
 <h3> Step 4: Allow Anyone To Create Tickets </h3> To do this in the Admin Panel, navigate to "Settings", "Users", "Settings", and uncheck "Require registration and login to create tickets".
 </p>
 <br />
-<img src="https://i.imgur.com/rzXZ60d.png" height="80%" width="80%" alt="Anyone can create"/>
+<img src="https://i.imgur.com/uhD9R6y.png"/>
 </p>
 <p>
-<h3> Step 5: Configure Agents </h3> Now we will create some agents, which are the help desk professionals who check and resolve tickets. In the Admin Panel, under "Agents", click "Add New Agent". The first agent will be named "Jane Doe" with an email of "jane.doe@osticket.com" and username "jane.doe". Make sure to note Jane's username for later. Click "Set Password", uncheck "Send the agent a password reset email", and enter a password for Jane. Once again, make note of this password for later. Uncheck "Require password change at next login", and click "Set". On the other tabs, this is where we can set Jane's permissions, add her to a team, and her department. Under "Access" We will put Jane in the "System Administrators" department as a "Supreme Admin". In "Teams" we will add her to "Level II Support", and then click "Create". Follow Step 5 to create a second agent with the name "John Doe". Set his department as "Support" and "View only". Now you should be able to see Jane and John under "Agents" with their departments listed.
+<h3> Step 5: Configure Agents </h3> Now we will create some agents, which are the help desk professionals who check and resolve tickets. In the Admin Panel, under "Agents", click "Add New Agent". The first agent will be named "Jose Perez" with an email of "jose.perez@osticket.com" and username "jose.perez". Make sure to note Jose's username for later. Click "Set Password", uncheck "Send the agent a password reset email", and enter a password for Jose. Once again, make note of this password for later. Uncheck "Require password change at next login", and click "Set". On the other tabs, this is where we can set Jose's permissions, add his to a team, and his department. Under "Access" We will put Jose in the "System Admin" department as a "Senior Admin". In "Teams" we will add him to "Level II Support", and then click "Create". Follow Step 5 to create a second agent with the name "Richard Mills". Set his department as "Support" and "View only". Now you should be able to see Jose and Richardosticv under "Agents" with their departments listed.
 </p>
 <br />
-<img src="https://i.imgur.com/trv3weH.png" height="80%" width="80%" alt="New agents"/>
+<img src="https://i.imgur.com/QexHP1d.png"/>
 </p>
 <p>
 <h3> Step 6: Configure Users </h3> Next, we will configure the users, who simply put, are the people opening tickets. To add users, switch to the "Agent Panel". Under "Users", click "Create New User". Name the first user "Karen Karen" with an email of "Karen@osticket.com", and "Add User". We will now add one more user. Following the same steps with the name Ken.
