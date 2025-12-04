@@ -3,47 +3,55 @@
 </p>
 
 # osTicket — Post-Installation Configuration  
-This guide outlines the **post-installation setup and configuration** for the open-source help desk ticketing system **osTicket**.  
-These steps simulate real-world help desk administration tasks typically handled by IT Support, Help Desk, and System Administrator teams.
+This phase focuses on configuring the help desk environment after installation.  
+These post-install tasks simulate what a real **Help Desk Administrator** or **System Administrator** does to prepare a production-ready support system.
 
 ---
 
-## 🧰 Environments & Technologies Used
-- Microsoft Azure (Virtual Machines / Compute)
-- Remote Desktop (RDP)
-- Internet Information Services (IIS)
+# 📘 Project Overview
+In this lab, I configured:
+
+- Roles & permissions  
+- Departments  
+- Support teams  
+- Agents & end users  
+- SLAs (Service Level Agreements)  
+- Help topics  
+
+Each configuration element mirrors a real-world IT support workflow used to organize ticket routing, role-based access control, and service prioritization.
 
 ---
 
-## 💻 Operating System Used
-- **Windows 10 (21H2)**
+# 🧰 Environments & Technologies Used
+- Microsoft Azure VM
+- osTicket Admin Panel
+- Windows 10 (21H2)
+- IIS / PHP
 
 ---
 
-# 🧪 Post-Install Configuration Steps
+# 🛠️ Configuration Steps
 
-## 🔹 **Step 1 — Configure Roles**
-Create a high-level administrative role with full permissions.
-
+## 🔹 Step 1 — Create Administrative Roles
 **Admin Panel → Agents → Roles → Add New Role**
 
-- Name: **Supreme Admin**
-- Under *Permissions*, enable **every** permission category  
-  (This grants unrestricted access for administrative tasks.)
+Create **Supreme Admin** role → grant *all* permissions.
 
 <br/>
 
 <img src="https://i.imgur.com/AxZLAMB.png"/>
 
+This role represents unrestricted administrative access for system configuration.
+
 ---
 
-## 🔹 **Step 2 — Configure Departments**
-Departments help organize agent responsibilities within the help desk.
+## 🔹 Step 2 — Create Departments
+Departments define areas of responsibility.
 
 **Admin Panel → Agents → Departments → Add New Department**
 
 - Name: **System Administrators**
-- Leave default settings and click **Create Department**
+- Keep default settings
 
 <br/>
 
@@ -51,13 +59,13 @@ Departments help organize agent responsibilities within the help desk.
 
 ---
 
-## 🔹 **Step 3 — Configure Teams**
-Teams allow collaboration between agents across departments.
+## 🔹 Step 3 — Configure Teams
+Teams allow agents to collaborate across departments.
 
 **Admin Panel → Agents → Teams → Add New Team**
 
 - Team Name: **Level II Support**
-- Under **Members**, add yourself as a team member
+- Add yourself under **Members**
 
 <br/>
 
@@ -65,8 +73,8 @@ Teams allow collaboration between agents across departments.
 
 ---
 
-## 🔹 **Step 4 — Allow Users to Create Tickets Without Accounts**
-Enable the option for anyone to submit tickets, even without registering.
+## 🔹 Step 4 — Allow Public Ticket Creation
+Enable users to create tickets without logging in.
 
 **Admin Panel → Settings → Users → Settings**
 
@@ -80,29 +88,22 @@ Uncheck:
 
 ---
 
-## 🔹 **Step 5 — Configure Agents**
-Agents are the help desk professionals who work and resolve tickets.
+## 🔹 Step 5 — Create Agents
+Agents resolve tickets and require appropriate permissions.
 
 **Admin Panel → Agents → Add New Agent**
 
-### Create Agent #1 — Jose Perez
-- **Name:** Jose Perez  
-- **Email:** jose.perez@osticket.com  
-- **Username:** jose.perez  
-- Set a password manually  
-- Uncheck: “Send password reset email”  
-- Uncheck: “Require password change at next login”
-
-### Assign Access & Team Membership
-- **Department:** System Admin → Senior Admin  
-- **Team:** Level II Support  
-- Click **Create**
-
-### Create Agent #2 — Richard Mills
-- **Name:** Richard Mills  
+### Agent 1 — Jose Perez
+- Username: **jose.perez**
+- Email: jose.perez@osticket.com
+- Set password manually
 - Assign:
-  - **Department:** Support (View Only)  
-  - **Team:** None (or based on your design)
+  - **Department:** System Admin (Senior Admin)
+  - **Team:** Level II Support
+
+### Agent 2 — Richard Mills
+- Assign:
+  - **Department:** Support (View Only)
 
 <br/>
 
@@ -110,19 +111,15 @@ Agents are the help desk professionals who work and resolve tickets.
 
 ---
 
-## 🔹 **Step 6 — Configure Users**
-Users are the individuals who submit tickets.
-
-Switch to the **Agent Panel**:
+## 🔹 Step 6 — Create Users
+Switch to **Agent Panel**:
 
 **Users → Create New User**
 
-### Add the following users:
-1. **Maria Larson**  
-   - maria.larson@osticket.com  
+Create:
 
-2. **John Wick**  
-   - john.wick@osticket.com  
+1. **Maria Larson** – maria.larson@osticket.com  
+2. **John Wick** – john.wick@osticket.com  
 
 <br/>
 
@@ -130,18 +127,18 @@ Switch to the **Agent Panel**:
 
 ---
 
-## 🔹 **Step 7 — Configure SLA Plans**
-Service Level Agreements define how quickly tickets must be resolved.
+## 🔹 Step 7 — Configure SLAs
+SLAs ensure timely ticket handling.
 
-**Admin Panel → Manage → SLA → Add New SLA Plan**
+**Admin Panel → Manage → SLA → Add New SLA**
 
-Create these SLA plans:
+Create:
 
 | SLA Name | Grace Period | Schedule |
 |---------|--------------|----------|
 | **SEV A** | 1 hour | 24/7 |
 | **SEV B** | 4 hours | 24/7 |
-| **SEV C** | 8 hours | Monday–Friday |
+| **SEV C** | 8 hours | Mon–Fri |
 
 <br/>
 
@@ -149,12 +146,12 @@ Create these SLA plans:
 
 ---
 
-## 🔹 **Step 8 — Configure Help Topics**
-Help topics streamline the ticket submission and routing process.
+## 🔹 Step 8 — Configure Help Topics
+Help Topics streamline ticket categorization.
 
 **Admin Panel → Manage → Help Topics → Add New Help Topic**
 
-Create the following help topics:
+Create:
 
 - Business Critical Outage  
 - Personal Computer Issues  
@@ -167,33 +164,25 @@ Create the following help topics:
 
 ---
 
-# 🎉 osTicket Post-Install Configuration Complete!
-You now have:
-
-- Defined **roles**, **departments**, and **teams**  
-- Added **agents** and **users**  
-- Configured **SLAs** and **help topics**  
-- Enabled user-friendly ticket submission  
-
-This reflects real-world responsibilities of IT Support and Help Desk Administrators.
+# 🎯 Skills Demonstrated
+- Role-Based Access Control (RBAC)  
+- Help Desk Administration  
+- User & Agent Provisioning  
+- Ticket Categorization  
+- SLA Design & Prioritization  
+- Workflow Optimization  
 
 ---
 
-# 🧠 Skills Demonstrated
-- Help desk administration  
-- Role-based access control (RBAC)  
-- Ticket workflow configuration  
-- User and agent management  
-- SLA planning  
-- System configuration in a cloud-hosted environment  
+# 🏁 Completion Summary
+You have successfully configured a fully functional osTicket support environment.  
 
----
+This demonstrates your ability to:
 
-# 📄 Summary
-This project showcases your ability to perform foundational help desk administration tasks—essential for roles like:
+- Administer enterprise support tools  
+- Configure access controls  
+- Build support workflows  
+- Establish service-level expectations  
+- Support real IT organizational structures  
 
-- IT Support Specialist  
-- Help Desk Technician  
-- Desktop Support Technician  
-- Junior System Administrator  
-
+These are the same skills expected of **IT Support**, **Help Desk**, and **Junior System Administrator** professionals.
